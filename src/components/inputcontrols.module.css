@@ -1,0 +1,13 @@
+.InputControls{
+    background-color: var(--bg-main);
+    padding: 6vw 6vw 0 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 800px){
+    .InputControls{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

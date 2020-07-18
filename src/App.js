@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Header from './components/Header';
-import CountryList from './components/CountryList';
+import Home from './components/Home';
 import styles from './app.module.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <input type="checkbox" id="theme-toggler" checked={darkMode} onChange={(e) => setDarkMode(e.target.checked)} hidden/>
       <div className={cssClass}>
         <Header />
-        <CountryList/>
+        <Home />
       </div>
     </>
   );
