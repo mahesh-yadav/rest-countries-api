@@ -1,0 +1,16 @@
+.light-theme{
+    --text-color: hsl(200, 15%, 8%);
+    --input-color: hsl(0, 0%, 52%);
+    --bg-main: hsl(0, 0%, 98%);
+    --card-color: hsl(0, 0%, 100%);
+    --bg-header: hsl(0, 0%, 100%);
+    --shadow-color: hsl(0, 0%, 87%);
+}
+
+.dark-theme{
+    --text-color: hsl(0, 0%, 100%);
+    --bg-header: hsl(200, 15%, 25%);
+    --card-color: hsl(209, 23%, 22%);
+    --bg-main: hsl(207, 26%, 17%);
+    --shadow-color: hsl(0, 0%, 10%);
+}
