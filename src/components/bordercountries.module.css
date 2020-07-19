@@ -1,0 +1,24 @@
+.countries{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-country{
+    height: 3.1rem;
+    background-color: var(--bg-header);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    border-radius: .4rem;
+    padding: .9rem 2rem; 
+    box-shadow: 2px 2px 5px 0 var(--shadow-color),-2px -2px 5px 0 var(--shadow-color);
+    border: none;
+    outline: none;
+    margin: .5rem 1rem .5rem 0;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btn-country:hover {
+    box-shadow: 1px 1px 5px 0 var(--shadow-color);
+}

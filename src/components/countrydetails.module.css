@@ -1,0 +1,126 @@
+.CountryDetails{
+    background-color: var(--bg-main);
+    padding: 5rem 6vw;
+}
+
+.btn-back{
+    width: 10rem;
+    height: 4rem;
+    background-color: var(--bg-header);
+    color: var(--text-color);
+    border-radius: .4rem;
+    box-shadow: 2px 2px 5px 0 var(--shadow-color),
+                -2px -2px 5px 0 var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin: 1rem 0 3rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btn-back:hover {
+    box-shadow: 1px 1px 5px 0 var(--shadow-color);
+}
+
+.btn-back i{
+    font-size: 1.3rem;
+    transition: all .4s;
+}
+
+.btn-back:hover i{
+    transform: translateX(-.7rem);
+}
+
+.btn-back span{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.flag-img img{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.details{
+    width: 100%;
+}
+
+.country-name{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.list-item{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.list-item span{
+    font-weight: 300;
+}
+
+
+.border{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.border h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 900px){
+    .container{
+        width: 100%;
+        max-width: unset;
+        flex-direction: row;
+    }
+
+    .flag-img{
+        width: 40%;
+        margin-right: 10%;
+        align-self: flex-start;
+    }
+
+    .flag-img img{
+        margin: 0;
+    }
+
+    .details{
+        width: 50%;
+    }
+    
+    .lists{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

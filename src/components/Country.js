@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './country.module.css';
+import {useHistory} from 'react-router-dom';
 
 function Country({country: {name, population, region, capital, flag}}){
+
+    const history = useHistory();
+
     return(
-        <div className={styles.Country}>
+        <div className={styles.Country} onClick={() => history.push(`/${name.toLowerCase()}`)}>
             <div className={styles['flag-img']}>
                 <img src={flag} alt={name}/>
             </div>

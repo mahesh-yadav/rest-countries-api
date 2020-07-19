@@ -15,6 +15,7 @@
     transform: translateY(-50%);
     left: 3rem;
     font-size: 1.3rem;
+    font-weight: 600;
     color: var(--input-color);
 }
 
@@ -30,6 +31,7 @@
     color: var(--input-color);
     background-color: var(--bg-header);
     font-size: 1.3rem;
+    font-weight: 600;
     border-radius: .4rem;
     box-shadow: 1px 1px 5px 0 var(--shadow-color);
 }
@@ -39,3 +41,14 @@
                 -1px -1px 2px 2px var(--shadow-color);
 }
 
+
+@media (min-width: 900px){
+    .SearchInput i{
+        font-size: 1.5rem;
+    }
+
+    .form-control{
+        font-size: 1.5rem;
+        height: 4.5rem;
+    }
+}
