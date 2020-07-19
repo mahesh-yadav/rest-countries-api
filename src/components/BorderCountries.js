@@ -8,7 +8,7 @@ function BorderCountries({countryCodes, countries}){
 
     const borderCountries = countryCodes.map((code) => {
         const country = countries.find((c) => c.alpha3Code === code);
-        if(country) return country;
+        return country;
     });
 
     return(

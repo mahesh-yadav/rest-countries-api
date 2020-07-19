@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import InputControls from './InputControls';
 import CountryList from './CountryList';
+import Loading from './Loading';
+import styles from './home.module.css';
 
 function Home({loading, countries, error}){
 
@@ -22,14 +24,14 @@ function Home({loading, countries, error}){
     let element = null;
 
     if(loading){
-        element = <p>Loading...</p>;
+        element = <Loading />
     } else if(error){
         element = <p>Error fetching countries</p>;
     } else if(countries){
         element = <CountryList countries={countries.filter((country) => inSelectedRegion(country)).filter((country) => matchSearch(country))}/>;
     }
     return(
-        <div>
+        <div className={styles.Home}>
             <InputControls searchValue={searchValue} onSearchValueChange={setSearchValue} selectedFilter={selectedFilter} onChangeSelectedFilter={setSelectedFilter}/>
             {
                 element

@@ -1,0 +1,30 @@
+.Loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+}
+
+.Loading-icon{
+    font-size: 6rem;
+    color: var(--text-color);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: rotationRound 2s infinite linear;
+}
+
+.Loading-text{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+@keyframes rotationRound {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(359deg);
+    }
+  }
